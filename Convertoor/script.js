@@ -21,7 +21,7 @@ function convert() {
     const valueInMeters = inputValue * conversionFactors[fromUnit];
     const outputValue = valueInMeters / conversionFactors[toUnit];
 
-    document.getElementById("conversion-formula").textContent = '1 ' + fromUnit + ' = ' + conversionFactors[fromUnit].toFixed(4) + 'm';
+    document.getElementById("conversion-formula").textContent = conversionFactors[fromUnit] + fromUnit + ' = ' + outputValue.toFixed(4) + toUnit;
     document.getElementById("output-value").textContent = outputValue.toFixed(4);
 }
 document.getElementById("convert-btn").addEventListener("click", convert);
