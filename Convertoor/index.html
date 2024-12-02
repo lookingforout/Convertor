@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nai-qkiq convertor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="conversion-tool">
+        <h2>Конвертор на мерни единици</h2>
+        <form>
+            <input type="number" id="input-value" min="0">
+            
+            <label for="from-unit">От:</label>
+            <select id="from-unit">
+                <option value="km">Километри</option>
+                <option value="m">Метри</option>
+                <option value="cm">Сантиметри</option>
+                <option value="inch">Инчове</option>
+                <option value="feet">Футове</option>
+                <option value="yard">Ярди</option>
+                <option value="mile">Мили</option>
+
+            </select>
+            <label for="to-unit">До:</label>
+            <select id="to-unit">
+                <option value="km">Километри</option>
+                <option value="m">Метри</option>
+                <option value="cm">Сантиметри</option>
+                <option value="inch">Инчове</option>
+                <option value="feet">Футове</option>
+                <option value="yard">Ярди</option>
+                <option value="mile">Мили</option>
+            </select>
+
+            <p id="conversion-formula"></p>
+            <button type="button" id="convert-btn">Convert</button>
+            <p id="output">Резултат: <span id="output-value"></span></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
